@@ -1,0 +1,25 @@
+[
+    {
+      "subject": "html",
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Trainer Marking Language",
+        "Hyper Text Marketing Language",
+        "Hyper Text Markup Language",
+        "Hyper Text Markup Leveler"
+      ],
+      "answer": 2
+    },
+    {
+      "subject": "css",
+      "question": "What does CSS stand for?",
+      "options": [
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Colorful Style Sheets",
+        "Creative Style Sheets"
+      ],
+      "answer": 0
+    }
+  ]
+  

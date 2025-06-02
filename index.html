@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="grid wide">
+  <!-- Start: Theme Toggle -->
+  <div class="theme-toggle">
+    <span class="theme-toggle__icon theme-toggle__icon--sun"></span>
+
+    <label class="theme-toggle__switch">
+      <input type="checkbox" class="theme-toggle__checkbox" />
+      <span class="theme-toggle__slider"></span>
+    </label>
+
+    <span class="theme-toggle__icon theme-toggle__icon--moon"></span>
+  </div>
+  <!-- End: Theme Toggle -->
+
+  <!-- Start: Start Menu -->
+  <section class="start-menu">
+    <div class="start-menu__intro">
+      <h1 class="start-menu__heading">Welcome to the <span class="start-menu__heading--bold">Frontend Quiz!</span></h1>
+      <p class="start-menu__description">Pick a subject to get started.</p>
+    </div>
+    <div class="start-menu__choices">
+      <button class="start-menu__button start-menu__button--html">
+        <div class="start-menu__icon-container">
+          <img src="./assets/images/icon-html.svg" alt="HTML Icon" />
+        </div>
+        HTML
+      </button>
+      <button class="start-menu__button start-menu__button--css">
+        <div class="start-menu__icon-container">
+          <img src="./assets/images/icon-css.svg" alt="CSS Icon" />
+        </div>
+        CSS
+      </button>
+      <button class="start-menu__button start-menu__button--js">
+        <div class="start-menu__icon-container">
+          <img src="./assets/images/icon-js.svg" alt="JavaScript Icon" />
+        </div>
+        JavaScript
+      </button>
+      <button class="start-menu__button start-menu__button--accessibility">
+        <div class="start-menu__icon-container">
+          <img src="./assets/images/icon-accessibility.svg" alt="Accessibility Icon" />
+        </div>
+        Accessibility
+      </button>
+    </div>
+  </section>
+  <!-- End: Start Menu -->
+  <!-- Start: Quiz Section -->
+
+  <!-- Quiz Question -->
+  <!-- <section class="quiz">
+    <div class="quiz__content">
+      <div class="quiz__question-info">
+        <p class="quiz__question-count">Question <span class="quiz__question-number"></span> of <span
+            class="quiz__question-total"></span></p>
+        <h2 class="quiz__question-text">Placeholder</h2>
+      </div>
+      <div class="quiz__progress-bar">
+        <div class="quiz__progress-bar--filled"></div>
+      </div>
+    </div>
+    <div class="quiz__options">
+      <button class="quiz__option quiz__option--a">
+        <div class="quiz__option-label">A</div>
+      </button>
+      <button class="quiz__option quiz__option--b">
+        <div class="quiz__option-label">B</div>
+      </button>
+      <button class="quiz__option quiz__option--c">
+        <div class="quiz__option-label">C</div>
+      </button>
+      <button class="quiz__option quiz__option--d">
+        <div class="quiz__option-label">D</div>
+      </button>
+      <button class="quiz__submit">Submit Answer</button>
+      <div class="quiz__prompt">
+        <img src="./assets/images/icon-error.svg" alt="Error Icon" />
+        <p class="quiz__prompt-text">Please select an answer</p>
+      </div>
+    </div>
+  </section> -->
+  <!-- End: Quiz Section -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
