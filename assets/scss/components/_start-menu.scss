@@ -1,0 +1,61 @@
+@use '../base/index' as *;
+
+//Start Menu
+
+.start-menu {
+    display: flex;
+    // display: none;
+    justify-content: space-between;
+    gap: 10rem;
+    // padding: 2.5rem 4rem;
+    padding: 2.5rem 0;
+
+    .start-menu__intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+
+        h1 {
+            color: var(--text-color);
+            font-weight: 300;
+            // font-size: 2.5rem;
+            @include responsive-heading(2.5rem, "1.972rem + 2.25vw", 4rem);
+
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        p {
+            color: var(--text-color-p);
+            font-style: italic;
+            font-weight: 400;
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+    }
+
+    .start-menu__choices {
+        display: flex;
+        flex-direction: column;
+        width: 56rem;
+        height: 28rem;
+        gap: 1.5rem;
+
+        button {
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+
+        img {
+            border-radius: .75rem;
+            padding: .15rem;
+            background-color: var(--html-bg);
+            display: block;
+            max-width: 100%;
+        }
+    }
+}

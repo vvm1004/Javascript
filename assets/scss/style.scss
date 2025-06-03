@@ -1,0 +1,10 @@
+// Import of partial files
+@use 'base/base';
+
+
+@use 'components/start-menu';
+@use 'components//theme-toggle';
+@use 'components/quiz';
+@use 'components/quiz-complete';
+
+

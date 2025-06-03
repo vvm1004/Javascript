@@ -1,3 +1,4 @@
+//Switch Dark/Light Mode
 const toggle = document.querySelector('.theme-toggle__checkbox');
 
 toggle.addEventListener('change', function () {

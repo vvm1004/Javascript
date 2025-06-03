@@ -1,0 +1,211 @@
+{
+    "html": [
+      {
+        "question": "What does HTML stand for?",
+        "options": ["Hyperlinks and Text Markup Language", "Hyper Text Markup Language", "Home Tool Markup Language", "Hyper Transfer Markup Language"],
+        "answer": "Hyper Text Markup Language"
+      },
+      {
+        "question": "Which tag is used to define an unordered list?",
+        "options": ["<ol>", "<ul>", "<li>", "<list>"],
+        "answer": "<ul>"
+      },
+      {
+        "question": "What tag is used to create a hyperlink in HTML?",
+        "options": ["<link>", "<a>", "<href>", "<url>"],
+        "answer": "<a>"
+      },
+      {
+        "question": "Which tag is used to display a picture in HTML?",
+        "options": ["<img>", "<pic>", "<src>", "<image>"],
+        "answer": "<img>"
+      },
+      {
+        "question": "Which tag defines the largest heading?",
+        "options": ["<h6>", "<heading>", "<head>", "<h1>"],
+        "answer": "<h1>"
+      },
+      {
+        "question": "How can you make a numbered list?",
+        "options": ["<ul>", "<list>", "<ol>", "<dl>"],
+        "answer": "<ol>"
+      },
+      {
+        "question": "Which attribute specifies the destination of a link?",
+        "options": ["src", "href", "link", "target"],
+        "answer": "href"
+      },
+      {
+        "question": "What element is used to break a line?",
+        "options": ["<br>", "<lb>", "<break>", "<hr>"],
+        "answer": "<br>"
+      },
+      {
+        "question": "Which tag defines a table row?",
+        "options": ["<tr>", "<td>", "<row>", "<th>"],
+        "answer": "<tr>"
+      },
+      {
+        "question": "Which tag is used to define a form in HTML?",
+        "options": ["<form>", "<input>", "<submit>", "<fieldset>"],
+        "answer": "<form>"
+      }
+    ],
+    "css": [
+      {
+        "question": "What does CSS stand for?",
+        "options": ["Cascading Style Sheets", "Creative Style Sheets", "Computer Style Sheets", "Colorful Style Sheets"],
+        "answer": "Cascading Style Sheets"
+      },
+      {
+        "question": "Which property is used to change the background color?",
+        "options": ["color", "background", "background-color", "bgcolor"],
+        "answer": "background-color"
+      },
+      {
+        "question": "How do you make text bold in CSS?",
+        "options": ["font-weight: bold;", "font: bold;", "style: bold;", "text-weight: bold;"],
+        "answer": "font-weight: bold;"
+      },
+      {
+        "question": "Which CSS property controls the text size?",
+        "options": ["font-style", "text-size", "font-size", "text-style"],
+        "answer": "font-size"
+      },
+      {
+        "question": "What does the 'position: absolute' do?",
+        "options": ["Positions element relative to viewport", "Removes element from flow", "Positions element relative to parent", "Fixes element to page"],
+        "answer": "Positions element relative to parent"
+      },
+      {
+        "question": "How do you select an element with id 'main'?",
+        "options": [".main", "#main", "main", "*main"],
+        "answer": "#main"
+      },
+      {
+        "question": "How do you select elements with class 'item'?",
+        "options": ["#item", ".item", "*item", "item"],
+        "answer": ".item"
+      },
+      {
+        "question": "Which property sets the space between lines of text?",
+        "options": ["letter-spacing", "word-spacing", "line-height", "text-spacing"],
+        "answer": "line-height"
+      },
+      {
+        "question": "Which CSS unit is relative to the root element font-size?",
+        "options": ["em", "px", "rem", "%"],
+        "answer": "rem"
+      },
+      {
+        "question": "How do you apply a style to all `<p>` elements?",
+        "options": ["p {}", ".p {}", "#p {}", "*p {}"],
+        "answer": "p {}"
+      }
+    ],
+    "javascript": [
+      {
+        "question": "Which keyword declares a variable in JavaScript?",
+        "options": ["let", "var", "const", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the output of 'typeof null'?",
+        "options": ["'object'", "'null'", "'undefined'", "'number'"],
+        "answer": "'object'"
+      },
+      {
+        "question": "Which method adds an element to the end of an array?",
+        "options": ["push()", "pop()", "shift()", "unshift()"],
+        "answer": "push()"
+      },
+      {
+        "question": "How do you write a comment in JavaScript?",
+        "options": ["<!-- comment -->", "// comment", "** comment **", "# comment"],
+        "answer": "// comment"
+      },
+      {
+        "question": "Which operator checks for both value and type?",
+        "options": ["==", "=", "===", "!="],
+        "answer": "==="
+      },
+      {
+        "question": "What is the result of '2' + 2 in JavaScript?",
+        "options": ["4", "22", "NaN", "undefined"],
+        "answer": "22"
+      },
+      {
+        "question": "Which method converts JSON to JavaScript object?",
+        "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.decode()"],
+        "answer": "JSON.parse()"
+      },
+      {
+        "question": "What is a correct way to define a function?",
+        "options": ["function myFunc() {}", "def myFunc() {}", "func myFunc() {}", "new function myFunc()"],
+        "answer": "function myFunc() {}"
+      },
+      {
+        "question": "Which method is used to loop through an array?",
+        "options": ["forEach()", "loop()", "map()", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "Which symbol is used for single-line comments?",
+        "options": ["//", "/*", "--", "<!--"],
+        "answer": "//"
+      }
+    ],
+    "accessibility": [
+      {
+        "question": "What does WCAG stand for?",
+        "options": ["Web Content Accessibility Guidelines", "World Content Access Group", "Web Control Access Guidelines", "Website Compliance and Accessibility Guide"],
+        "answer": "Web Content Accessibility Guidelines"
+      },
+      {
+        "question": "What HTML attribute improves accessibility for screen readers?",
+        "options": ["alt", "src", "href", "target"],
+        "answer": "alt"
+      },
+      {
+        "question": "Which ARIA role defines a navigation landmark?",
+        "options": ["role='nav'", "role='navigation'", "role='menu'", "role='tablist'"],
+        "answer": "role='navigation'"
+      },
+      {
+        "question": "What should every form input have for accessibility?",
+        "options": ["placeholder", "name", "id", "label"],
+        "answer": "label"
+      },
+      {
+        "question": "Which tool helps test accessibility in Chrome?",
+        "options": ["Lighthouse", "React DevTools", "Redux Inspector", "HTML Validator"],
+        "answer": "Lighthouse"
+      },
+      {
+        "question": "Keyboard focus order should match which order?",
+        "options": ["Random order", "Logical visual order", "Alphabetical", "Z-index"],
+        "answer": "Logical visual order"
+      },
+      {
+        "question": "What does a screen reader do?",
+        "options": ["Reads aloud text on the screen", "Displays larger text", "Reads only images", "Adds color contrast"],
+        "answer": "Reads aloud text on the screen"
+      },
+      {
+        "question": "What is the purpose of semantic HTML?",
+        "options": ["To style elements", "To give meaning to content", "To link scripts", "To load faster"],
+        "answer": "To give meaning to content"
+      },
+      {
+        "question": "Which key is most used for keyboard navigation?",
+        "options": ["Shift", "Tab", "Enter", "Esc"],
+        "answer": "Tab"
+      },
+      {
+        "question": "What ARIA attribute describes elements?",
+        "options": ["aria-label", "aria-hidden", "aria-checked", "aria-expanded"],
+        "answer": "aria-label"
+      }
+    ]
+  }
+  

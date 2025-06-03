@@ -7,23 +7,32 @@
   <title>Frontend Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+
 </head>
 
 <body class="grid wide">
   <!-- Start: Theme Toggle -->
   <div class="theme-toggle">
-    <span class="theme-toggle__icon theme-toggle__icon--sun"></span>
 
-    <label class="theme-toggle__switch">
-      <input type="checkbox" class="theme-toggle__checkbox" />
-      <span class="theme-toggle__slider"></span>
-    </label>
+    <div class="theme-toggle__object">
+      <img class="subject-img" src="./assets/images/icon-html.svg" alt="subject icon">
+      <h2>HTML</h2>
+    </div>
 
-    <span class="theme-toggle__icon theme-toggle__icon--moon"></span>
+    <div class="theme-toggle__wrapper">
+      <span class="theme-toggle__icon theme-toggle__icon--sun"></span>
+
+      <label class="theme-toggle__switch">
+        <input type="checkbox" class="theme-toggle__checkbox" />
+        <span class="theme-toggle__slider"></span>
+      </label>
+  
+      <span class="theme-toggle__icon theme-toggle__icon--moon"></span>
+    </div>
+   
   </div>
   <!-- End: Theme Toggle -->
 
@@ -56,15 +65,14 @@
         <div class="start-menu__icon-container">
           <img src="./assets/images/icon-accessibility.svg" alt="Accessibility Icon" />
         </div>
-        Accessibility
+         
       </button>
     </div>
   </section>
   <!-- End: Start Menu -->
-  <!-- Start: Quiz Section -->
 
-  <!-- Quiz Question -->
-  <!-- <section class="quiz">
+  <!-- Start: Quiz Question -->
+  <section class="quiz">
     <div class="quiz__content">
       <div class="quiz__question-info">
         <p class="quiz__question-count">Question <span class="quiz__question-number"></span> of <span
@@ -88,14 +96,42 @@
       <button class="quiz__option quiz__option--d">
         <div class="quiz__option-label">D</div>
       </button>
-      <button class="quiz__submit">Submit Answer</button>
+      <button class="quiz__submit">Submit</button>
       <div class="quiz__prompt">
         <img src="./assets/images/icon-error.svg" alt="Error Icon" />
         <p class="quiz__prompt-text">Please select an answer</p>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- End: Quiz Section -->
+
+
+  
+    <!-- Quiz completed start -->
+    <article class="quiz-complete">
+      <div class="quiz-complete__left">
+        <h1>
+          Quiz completed
+          <span class="quiz-complete__scored">You scored...</span>
+        </h1>
+      </div>
+
+      <div class="quiz-complete__right">
+        <div class="quiz-complete__score-container">
+          <div class="quiz-complete__final">
+            <div class="quiz-complete__button-icon-container">
+              <img class="quiz-complete__subject-img" src="./assets/images/icon-css.svg" alt="subject icon" />
+            </div>
+            <!-- <img class="quiz-complete__subject-img" src=""> -->
+            <h2 class="quiz-complete__subject-chosen">some Subject</h2>
+          </div>
+          <h1 class="quiz-complete__final-score">2</h1>
+          <p class="quiz-complete__score-out-of">out of <span class="quiz-complete__question-total">totalQ</span></p>
+        </div>
+        <button class="quiz-complete__restart">Play Again</button>
+      </div>
+    </article>
+    <!-- Quiz completed end -->
 
   <script src="script.js"></script>
 </body>
