@@ -52,7 +52,17 @@
         width: 35rem;
         height: 28rem;
         gap: 1.5rem;
-        border: 3px solid transparent;
+
+
+        .quiz__option {
+            border: 3px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        // background-color: white;
+        // color: black;
+        // cursor: pointer;
+        // transition: all 0.3s ease;
 
         .quiz__option-label {
             @include flex-center();
@@ -82,9 +92,11 @@
 
 
     &__prompt {
-        @include flex-center();
+        // display: flex;
+        display: none;
+        justify-content: center;
+        align-items: center;
         gap: 1rem;
-        visibility: hidden;
 
         p {
             color: var(--invalid-color);
@@ -93,4 +105,37 @@
         }
     }
 
+    //-----------------------------------------
+    .quiz__option.selected {
+        border-color: var(--purple);
+        /* viền tím khi chọn */
+    }
+
+    .quiz__option.correct {
+        border-color: var(--correct-color);
+        /* viền xanh khi đúng */
+    }
+
+    .quiz__option.incorrect {
+        border-color: var(--invalid-color);
+        /* viền đỏ khi sai */
+    }
+
+    .quiz__option.correct .quiz__option-label {
+        background-color: var(--correct-color);
+        color: #ffff;
+    }
+
+    .quiz__option.incorrect .quiz__option-label {
+        background-color: var(--invalid-color);
+        color: #ffff;
+    }
+
+    .correct-icon {
+        justify-self: end;
+    }
+
+    .incorrect-icon {
+        justify-self: end;
+    }
 }

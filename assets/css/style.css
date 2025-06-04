@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -116,28 +117,25 @@ body {
 .start-menu .start-menu__choices img {
   border-radius: 0.75rem;
   padding: 0.15rem;
-  background-color: var(--html-bg);
   display: block;
   max-width: 100%;
 }
 
 .theme-toggle {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 75px;
 }
 .theme-toggle__object {
-  display: flex;
-  justify-content: center;
+  display: none;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
-  border-radius: 0.75rem;
-  padding: 0.15rem;
-  visibility: hidden;
 }
 .theme-toggle__object img {
   background-color: var(--html-bg);
+  border-radius: 0.75rem;
+  padding: 0.15rem;
 }
 .theme-toggle__object h2 {
   color: var(--text-color);
@@ -145,8 +143,8 @@ body {
   font-weight: 500;
 }
 .theme-toggle__wrapper {
+  margin-left: auto;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   gap: 0.75rem;
   border-radius: 10px;
@@ -246,7 +244,10 @@ body {
   width: 35rem;
   height: 28rem;
   gap: 1.5rem;
+}
+.quiz .quiz__options .quiz__option {
   border: 3px solid transparent;
+  transition: border-color 0.3s ease;
 }
 .quiz .quiz__options .quiz__option-label {
   display: flex;
@@ -272,16 +273,41 @@ body {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), var(--purple);
 }
 .quiz__prompt {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  visibility: hidden;
 }
 .quiz__prompt p {
   color: var(--invalid-color);
   margin: 0;
   font-style: normal;
+}
+.quiz .quiz__option.selected {
+  border-color: var(--purple);
+  /* viền tím khi chọn */
+}
+.quiz .quiz__option.correct {
+  border-color: var(--correct-color);
+  /* viền xanh khi đúng */
+}
+.quiz .quiz__option.incorrect {
+  border-color: var(--invalid-color);
+  /* viền đỏ khi sai */
+}
+.quiz .quiz__option.correct .quiz__option-label {
+  background-color: var(--correct-color);
+  color: white;
+}
+.quiz .quiz__option.incorrect .quiz__option-label {
+  background-color: var(--invalid-color);
+  color: white;
+}
+.quiz .correct-icon {
+  justify-self: end;
+}
+.quiz .incorrect-icon {
+  justify-self: end;
 }
 
 .quiz-complete {

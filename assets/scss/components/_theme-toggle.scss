@@ -2,19 +2,23 @@
 
 // Theme toggle
 .theme-toggle {
-    @include flex-center(space-between);
+    display: flex;
+    align-items: center;
     margin-top: 75px;
 
 
     &__object {
-        @include flex-center();
+        display: none;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 1rem;
-        border-radius: .75rem;
-        padding: .15rem;
-        visibility: hidden;
+
 
         img {
             background-color: var(--html-bg);
+            border-radius: .75rem;
+            padding: .15rem;
         }
 
         h2 {
@@ -25,7 +29,9 @@
     }
 
     &__wrapper {
-        @include flex-center(flex-end);
+        margin-left: auto;  
+        display: flex;     
+        align-items: center;
         gap: 0.75rem;
         border-radius: 10px;
     }
