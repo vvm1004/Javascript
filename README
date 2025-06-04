@@ -1,0 +1,34 @@
+#Challenge: Multi-step Register Form
+- This challenge provides a great opportunity to improve your JavaScript skills by creating an interactive quiz application. Users will be able to select a quiz subject, answer multiple-choice questions, and receive instant feedback on their performance.
+
+##Application Pages (The order in which the pages will be done)
+- Home
+
+###Technologies Used
+- HTML
+- SCSS (Variables, Mixins, Nesting, @extend)
+- BEM structured naming method
+- JS working with fetch(), Promises, await, and .json(),...
+
+####Challenge Requirement
+- A fully functional quiz application matching the given design
+- HTML structure for the quiz selection, questions, answer choices, and results page
+- Validation to ensure users select an answer before submitting
+- Users should see instant feedback on whether their selected answer is correct or incorrect
+- Users should be able to navigate through the quiz, question by question
+- After the final question, users should see a completed state displaying their total score
+- Users should have the option to restart the quiz and select a new subject
+- The page should be responsive across different screen sizes
+- Users should see hover and focus states for all interactive elements
+- Users should be able to navigate the entire app using only their keyboard
+- Bonus: Implement a light/dark mode toggle for theme switching
+
+#####Link Design Prefer
+- https://rainsaxfrontend-mentor-projects.github.io/frontend-quiz-app/
+
+######Goal of the Challenge:
+Async/Await & Fetch API
+DOM Manipulation & Event Handling
+Basic State Management
+UI/UX Logic (Validation, Feedback)
+Clean & Reusable Code Structure
