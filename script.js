@@ -1,13 +1,15 @@
 //Switch Dark/Light Mode
 const toggle = document.querySelector('.theme-toggle__checkbox');
 
-toggle.addEventListener('change', function () {
-  if (this.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
-    document.documentElement.removeAttribute('data-theme');
-  }
-});
+if (toggle) {
+  toggle.addEventListener('change', function () {
+    if (this.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  });
+}
 // ----------------------------
 // Lấy DOM element cần thiết
 const startMenu = document.querySelector('.start-menu');
@@ -46,7 +48,6 @@ async function loadQuestions() {
   try {
     const res = await fetch('./data/questions.json');
     questionsData = await res.json();
-    console.log('Questions loaded:', questionsData);
   } catch (error) {
     console.error('Failed to load questions:', error);
   }
@@ -96,7 +97,6 @@ async function init() {
 
     currentSubject = subject;
     currentQuestions = questionsData[subject.toLowerCase()];
-    console.log(`Starting quiz for subject: ${currentSubject}`, currentQuestions);
     currentQuestionIndex = 0;
     score = 0;
     selectedAnswer = null;
@@ -136,7 +136,6 @@ async function init() {
     });
 
     // Cập nhật progress bar
-    const progressBarFilled = document.querySelector('.quiz__progress-bar--filled');
     const progressPercent = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
     progressBarFilled.style.width = progressPercent + '%';
   }
@@ -148,7 +147,6 @@ async function init() {
       optionsButtons.forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
       selectedAnswer = btn.querySelector('span').textContent;
-      console.log(`Selected answer: ${selectedAnswer}`);
       promptEl.style.display = 'none';
     });
   });
